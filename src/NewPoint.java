@@ -1,7 +1,7 @@
 import java.awt.Point;
 
 public class NewPoint {
-	int value;
+	Point p;
 	NewPoint gauche;
 	NewPoint droit;
 	
@@ -9,17 +9,17 @@ public class NewPoint {
 		super();
 	}
 	
-	public NewPoint(int value, NewPoint gauche, NewPoint droit) {
+	public NewPoint(Point p, NewPoint gauche, NewPoint droit) {
 		super();
-		this.value = value;
+		this.p = p;
 		this.gauche = gauche;
 		this.droit = droit;
 	}
-	public int getValue() {
-		return value;
+	public Point getValue() {
+		return p;
 	}
-	public void setValue(int value) {
-		this.value = value;
+	public void setValue(Point p) {
+		this.p = p;
 	}
 	public NewPoint getGauche() {
 		return gauche;
